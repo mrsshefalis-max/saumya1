@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meditation Heaven</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(to bottom,#d8f3dc,#b7e4c7,#95d5b2);
+overflow-x:hidden;
+color:#1b4332;
+}
+
+.navbar{
+width:100%;
+padding:18px 8%;
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:2rem;
+font-weight:bold;
+color:#081c15;
+}
+
+.navbar a{
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+color:#081c15;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 8% 50px;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.owner-card{
+background:white;
+padding:25px;
+border-radius:25px;
+text-align:center;
+width:300px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+animation:float 3s infinite ease-in-out;
+}
+
+.owner-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #52b788;
+margin-bottom:15px;
+}
+
+.owner-card{
+background:white;
+padding:20px;
+border-radius:25px;
+text-align:center;
+width:250px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+animation:float 3s infinite ease-in-out;
+}
+
+.owner-card h2{
+margin-bottom:10px;
+}
+
+.about-section{
+max-width:500px;
+}
+
+.about-section h1{
+font-size:4rem;
+margin-bottom:20px;
+color:#081c15;
+}
+
+.about-section p{
+font-size:1.1rem;
+line-height:2;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#2d6a4f;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:0.4s;
+}
+
+.btn:hover{
+background:#081c15;
+transform:scale(1.05);
+}
+
+.slider-section{
+padding:80px 8%;
+text-align:center;
+}
+
+.title{
+font-size:3rem;
+margin-bottom:40px;
+}
+
+.slider{
+width:100%;
+max-width:900px;
+height:400px;
+margin:auto;
+overflow:hidden;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+position:relative;
+}
+
+.slides{
+display:flex;
+width:400%;
+height:100%;
+animation:slide 16s infinite;
+}
+
+.slides img{
+width:25%;
+height:400px;
+object-fit:cover;
+flex-shrink:0;
+}
+
+.slides{
+display:flex;
+width:400%;
+animation:slide 16s infinite;
+}
+
+.slides img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+.video-page{
+padding:80px 8%;
+background:white;
+margin-top:50px;
+}
+
+.video-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+iframe{
+width:100%;
+height:250px;
+border:none;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.location-box{
+margin-top:60px;
+background:#d8f3dc;
+padding:40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.location-box h2{
+margin-bottom:20px;
+font-size:2rem;
+}
+
+.location-box p{
+font-size:1.1rem;
+line-height:2;
+}
+
+footer{
+background:#081c15;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@keyframes slide{
+0%{transform:translateX(0);}
+20%{transform:translateX(0);}
+25%{transform:translateX(-25%);}
+45%{transform:translateX(-25%);}
+50%{transform:translateX(-50%);}
+70%{transform:translateX(-50%);}
+75%{transform:translateX(-75%);}
+95%{transform:translateX(-75%);}
+100%{transform:translateX(0);}
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
+}
+
+@media(max-width:768px){
+.about-section h1{
+font-size:2.5rem;
+}
+
+.slider{
+height:300px;
+}
+
+.slides img{
+height:300px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">Meditation Heaven
+    
+</div>
+
+<div>
+<a href="#home">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#videos">Videos</a>
+<a href="#location">Location</a>
+</div>
+</div>
+
+<section class="hero" id="home">
+
+<div class="owner-card">
+<img src="saumya.png" alt="Owner Picture">
+<h2>Mrs.Saumya Srivastava</h2>
+<p>Peace • Mindfulness • Positive Energy 🌿</p>
+</div>
+
+<div class="about-section">
+<h1>Find Your Inner Peace</h1>
+<p>
+Welcome to my meditation world where calmness meets positivity. This website is specially designed to help people relax their minds through meditation, peaceful music, yoga, nature vibes, and mindfulness practices.
+</p>
+
+<a href="#videos" class="btn">Click To See Videos</a>
+</div>
+
+</section>
+
+<section class="slider-section" id="gallery">
+<h1 class="title">Meditation Picture Slider</h1>
+
+<div class="slider">
+<div class="slides">
+<img src="https://images.unsplash.com/photo-1606126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?q=80&w=1200&auto=format&fit=crop">
+</div>
+</div>
+</section>
+
+<section class="video-page" id="videos">
+<h1 class="title">Meditation Videos</h1>
+
+<div class="video-container">
+
+<iframe src="https://www.youtube.com/embed/inpok4MKVLM"></iframe>
+
+<iframe src="https://www.youtube.com/embed/ZToicYcHIOU"></iframe>
+
+<iframe src="https://www.youtube.com/embed/O-6f5wQXSu8"></iframe>
+
+</div>
+
+<div class="location-box" id="location">
+<h2>Our Meditation Center</h2>
+
+<p>
+📍 Location : mahant nagar, jaipur, India <br><br>
+This meditation space is created for positivity, relaxation, yoga sessions, peaceful breathing exercises, and mindfulness activities. Here people can connect with nature, calm their thoughts, and discover happiness within themselves.
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 Meditation Heaven | Designed with Peace & Positivity 🌿
+</footer>
+
+</body>
+</html>
